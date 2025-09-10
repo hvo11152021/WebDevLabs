@@ -1,0 +1,202 @@
+body {
+	color: #308230;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	margin: 0;
+}
+
+header,
+h1,
+h2,
+nav li,
+footer {
+	text-align: center;
+}
+
+header,
+section {
+	padding: 10px;
+}
+
+header {
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/renewable-energy-sources.jpg') center no-repeat;
+	background-size: cover;
+	font-size: 16px;
+	color: white;
+	margin-bottom: 30px;
+}
+
+header h1 {
+	padding-top: 50px;
+}
+
+section {
+	background-color: #ebffeb;
+}
+
+section h1 {
+	font-size: 30px;
+	text-transform: uppercase;
+}
+
+h1 {
+	font-weight: 700;
+}
+
+h2 {
+	font-weight: 400;
+	font-size: 16px;
+}
+
+nav {
+	float: right;
+}
+
+nav li {
+	margin: 0;
+	padding: 10px 0;
+	width: 100%;
+}
+
+nav ul {
+	background: rgba(93, 117, 156, 0.9);
+	display: none;
+	list-style-type: none;
+	position: absolute;
+	right: 0;
+	top: 50px;
+	width: 100%;
+}
+
+nav:hover ul {
+	display: block;
+}
+
+nav a {
+	color: #fff;
+	font-size: 20px;
+	text-decoration: none;
+}
+
+img {
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+}
+
+footer {
+	background-color: #308230;
+	color: #FFF;
+	font-weight: 300;
+	font-size: 18px;
+	padding: 20px;
+	text-align: center;
+}
+
+#menu-icon {
+	background: url('../images/menu-icon.png') center;
+	border-radius: 5px;
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+}
+
+.entire-width-column {
+	display: grid;
+	grid-template-columns: 1fr;
+	margin: auto;
+	width: 95%;
+}
+
+.many-columns {
+	display: grid;
+	margin: 30px auto;
+	width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+	header {
+		padding: 80px 32px;
+	}
+
+	header h1 {
+		font-size: 40px;
+	}
+
+	section {
+		padding: 0 32px;
+	}
+
+	h1 {
+		font-size: 30px;
+	}
+
+	h2 {
+		font-size: 25px;
+	}
+
+	img {
+		height: 100%;
+		object-fit: cover;
+	}
+
+	nav ul {
+		background: transparent;
+		display: inline-block;
+		float: right;
+		text-align: right;
+		top: 18px;
+		width: 100%;
+	}
+
+	nav li {
+		display: inline-block;
+		padding: 10px;
+		width: 20%;
+	}
+
+	#menu-icon {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	header h1 {
+		font-size: 60px;
+	}
+
+	h1 {
+		font-size: 50px;
+	}
+
+	h2 {
+		font-size: 40px;
+	}
+
+	.many-columns {
+		grid-template-columns: repeat(2, 1fr);
+		grid-row-gap: 30px;
+		width: 80%;
+	}
+}
+
+@media screen and (min-width: 1440px) {
+	nav li {
+		width: 10%;
+	}
+
+	.many-columns {
+		width: 80%;
+	}
+}
+
+@media screen and (min-width: 1920px) {
+	nav li {
+		width: 8%;
+	}
+
+	.many-columns {
+		width: 75%;
+	}
+}

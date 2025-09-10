@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap');
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: #FFF;
+}
+
+h1 {
+	margin: 0;
+}
+
+label {
+	display: block;
+	margin-bottom: 5px;
+	margin-top: 15px;
+}
+
+select {
+	display: block;
+	border: solid #FFF;
+	border-radius: 5px;
+
+	font-family: inherit;
+	font-size: inherit;
+	cursor: pointer;
+}
+
+textarea {
+	display: block;
+	height: 100px;
+	width: 100%;
+	border: solid #FFF;
+	border-radius: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+	display: block;
+	height: 20px;
+	width: 50%;
+	border: solid #FFF;
+	border-radius: 5px;
+}
+
+input[type="number"],
+input[type="date"] {
+	display: block;
+	height: 20px;
+	border: solid #FFF;
+	border-radius: 5px;
+}
+
+input[type="submit"] {
+	background: #66CDAA;
+	border: solid #66CDAA;
+	border-radius: 20px;
+	color: #FFF;
+	font-size: 20px;
+	cursor: pointer;
+	display: inline-block;
+	margin-top: 15px;
+	padding: 15px 30px;
+}
+
+input[type="submit"]:hover {
+	background-color: #48D1CC;
+	border: solid #48D1CC;
+}
+
+
+
+/***************
+IDs
+***************/
+#container {
+	background-color: #45b0d2;
+	margin: 50px auto;
+	padding: 25px;
+	width: 750px;
+}
