@@ -1,0 +1,24 @@
+{
+  "name": "webdevlabs",
+  "version": "1.0.0",
+  "description": "This repository is a combination of all static website practice projects from WEBD1102 course in CPA program Niagara College Canada.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hvo11152021/WebDevLabs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hvo11152021/WebDevLabs/issues"
+  },
+  "homepage": "https://github.com/hvo11152021/WebDevLabs#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.14",
+    "tailwindcss": "^4.1.14"
+  }
+}
