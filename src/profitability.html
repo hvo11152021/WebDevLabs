@@ -4,188 +4,416 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Renewable Energy</title>
+    <title>REimagine</title>
     <link href="./output.css" rel="stylesheet">
 </head>
 
 <body>
     <!-- ========== HEADER ========== -->
-	<header
-		class="bg-white border-b border-gray-200 dark:bg-neutral-800 dark:border-neutral-700 flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full">
-		<nav
-			class="relative max-w-[85rem] w-full md:flex md:items-center md:justify-between md:gap-3 mx-auto px-4 sm:px-6 lg:px-8 py-2 dark:bg-neutral-900">
-			<!-- Logo w/ Collapse Button -->
-			<div class="flex items-center justify-between">
-				<a class="flex-none font-semibold text-xl text-black focus:outline-hidden focus:opacity-80 dark:text-white"
-					href="#" aria-label="Brand">Brand</a>
+    <header
+        class="bg-white border-b border-gray-200 dark:bg-neutral-800 dark:border-neutral-700 flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full">
+        <nav
+            class="relative max-w-[85rem] w-full md:flex md:items-center md:justify-between md:gap-3 mx-auto px-4 sm:px-6 lg:px-8 py-2 dark:bg-neutral-900">
+            <!-- Logo w/ Collapse Button -->
+            <div class="flex items-center justify-between">
+                <a class="flex-none font-semibold text-xl text-black focus:outline-hidden focus:opacity-80 dark:text-white"
+                    href="/index.html" aria-label="Brand">REimagine</a>
 
-				<!-- Collapse Button -->
-				<div class="md:hidden">
-					<button type="button"
-						class="hs-collapse-toggle relative size-9 flex justify-center items-center text-sm font-semibold rounded-lg border border-gray-200 text-gray-800 hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:text-white dark:border-neutral-700 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
-						id="hs-header-classic-collapse" aria-expanded="false" aria-controls="hs-header-classic"
-						aria-label="Toggle navigation" data-hs-collapse="#hs-header-classic">
-						<svg class="hs-collapse-open:hidden size-4" xmlns="http://www.w3.org/2000/svg" width="24"
-							height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-							stroke-linecap="round" stroke-linejoin="round">
-							<line x1="3" x2="21" y1="6" y2="6" />
-							<line x1="3" x2="21" y1="12" y2="12" />
-							<line x1="3" x2="21" y1="18" y2="18" />
-						</svg>
-						<svg class="hs-collapse-open:block shrink-0 hidden size-4" xmlns="http://www.w3.org/2000/svg"
-							width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-							stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-							<path d="M18 6 6 18" />
-							<path d="m6 6 12 12" />
-						</svg>
-						<span class="sr-only">Toggle navigation</span>
-					</button>
-				</div>
-				<!-- End Collapse Button -->
-			</div>
-			<!-- End Logo w/ Collapse Button -->
+                <!-- Collapse Button -->
+                <div class="md:hidden">
+                    <button type="button"
+                        class="hs-collapse-toggle relative size-9 flex justify-center items-center text-sm font-semibold rounded-lg border border-gray-200 text-gray-800 hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:text-white dark:border-neutral-700 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
+                        id="hs-header-classic-collapse" aria-expanded="false" aria-controls="hs-header-classic"
+                        aria-label="Toggle navigation" data-hs-collapse="#hs-header-classic">
+                        <svg class="hs-collapse-open:hidden size-4" xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="3" x2="21" y1="6" y2="6" />
+                            <line x1="3" x2="21" y1="12" y2="12" />
+                            <line x1="3" x2="21" y1="18" y2="18" />
+                        </svg>
+                        <svg class="hs-collapse-open:block shrink-0 hidden size-4" xmlns="http://www.w3.org/2000/svg"
+                            width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 6 6 18" />
+                            <path d="m6 6 12 12" />
+                        </svg>
+                        <span class="sr-only">Toggle navigation</span>
+                    </button>
+                </div>
+                <!-- End Collapse Button -->
+            </div>
+            <!-- End Logo w/ Collapse Button -->
 
-			<!-- Collapse -->
-			<div id="hs-header-classic"
-				class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow md:block"
-				aria-labelledby="hs-header-classic-collapse">
-				<div
-					class="overflow-hidden overflow-y-auto max-h-[75vh] [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-gray-300 dark:[&::-webkit-scrollbar-track]:bg-neutral-700 dark:[&::-webkit-scrollbar-thumb]:bg-neutral-500">
-					<div class="py-2 md:py-0 flex flex-col md:flex-row md:items-center md:justify-end gap-0.5 md:gap-1">
-						<a class="p-2 flex items-center text-sm text-gray-800 hover:text-gray-500 focus:outline-hidden focus:text-gray-500 dark:text-neutral-200 dark:hover:text-neutral-500 dark:focus:text-neutral-500"
-							href="index.html" aria-current="page">
-							<svg class="shrink-0 size-4 me-3 md:me-2 block md:hidden" xmlns="http://www.w3.org/2000/svg"
-								width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-								stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-								<path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" />
-								<path
-									d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
-							</svg>
-							Home
-						</a>
+            <!-- Collapse -->
+            <div id="hs-header-classic"
+                class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow md:block"
+                aria-labelledby="hs-header-classic-collapse">
+                <div
+                    class="overflow-hidden overflow-y-auto max-h-[75vh] [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-gray-300 dark:[&::-webkit-scrollbar-track]:bg-neutral-700 dark:[&::-webkit-scrollbar-thumb]:bg-neutral-500">
+                    <div class="py-2 md:py-0 flex flex-col md:flex-row md:items-center md:justify-end gap-0.5 md:gap-1">
+                        <a class="p-2 flex items-center text-sm text-gray-800 hover:text-gray-500 focus:outline-hidden focus:text-gray-500 dark:text-neutral-200 dark:hover:text-neutral-500 dark:focus:text-neutral-500"
+                            href="/index.html" aria-current="page">
+                            <svg class="shrink-0 size-4 me-3 md:me-2 block md:hidden" xmlns="http://www.w3.org/2000/svg"
+                                width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" />
+                                <path
+                                    d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                            </svg>
+                            Home
+                        </a>
 
-						<a class="p-2 flex items-center text-sm text-gray-800 hover:text-gray-500 focus:outline-hidden focus:text-gray-500 dark:text-neutral-200 dark:hover:text-neutral-500 dark:focus:text-neutral-500"
-							href="importance.html">
-							<svg class="shrink-0 size-4 me-3 md:me-2 block md:hidden" xmlns="http://www.w3.org/2000/svg"
-								width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-								stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-								<path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
-								<circle cx="12" cy="7" r="4" />
-							</svg>
-							Importance
-						</a>
+                        <a class="p-2 flex items-center text-sm text-gray-800 hover:text-gray-500 focus:outline-hidden focus:text-gray-500 dark:text-neutral-200 dark:hover:text-neutral-500 dark:focus:text-neutral-500"
+                            href="importance.html">
+                            <svg class="shrink-0 size-4 me-3 md:me-2 block md:hidden" xmlns="http://www.w3.org/2000/svg"
+                                width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
+                                <circle cx="12" cy="7" r="4" />
+                            </svg>
+                            Importance
+                        </a>
 
-						<a class="p-2 flex items-center text-sm text-blue-600 focus:outline-hidden focus:text-blue-600 dark:text-blue-500 dark:focus:text-blue-500"
-							href="profitability.html">
-							<svg class="shrink-0 size-4 me-3 md:me-2 block md:hidden" xmlns="http://www.w3.org/2000/svg"
-								width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-								stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-								<path d="M12 12h.01" />
-								<path d="M16 6V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" />
-								<path d="M22 13a18.15 18.15 0 0 1-20 0" />
-								<rect width="20" height="14" x="2" y="6" rx="2" />
-							</svg>
-							Profitability
-						</a>
+                        <a class="p-2 flex items-center text-sm text-blue-600 focus:outline-hidden focus:text-blue-600 dark:text-blue-500 dark:focus:text-blue-500"
+                            href="profitability.html">
+                            <svg class="shrink-0 size-4 me-3 md:me-2 block md:hidden" xmlns="http://www.w3.org/2000/svg"
+                                width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 12h.01" />
+                                <path d="M16 6V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" />
+                                <path d="M22 13a18.15 18.15 0 0 1-20 0" />
+                                <rect width="20" height="14" x="2" y="6" rx="2" />
+                            </svg>
+                            Profitability
+                        </a>
 
-						<!-- Button Group -->
-						<div
-							class="relative flex flex-wrap items-center gap-x-1.5 md:ps-2.5 mt-1 md:mt-0 md:ms-1.5 before:block before:absolute before:top-1/2 before:-start-px before:w-px before:h-4 before:bg-gray-300 before:-translate-y-1/2 dark:before:bg-neutral-700">
-							<a class="p-2 w-full flex items-center text-sm text-gray-800 hover:text-gray-500 focus:outline-hidden focus:text-gray-500 dark:text-neutral-200 dark:hover:text-neutral-500 dark:focus:text-neutral-500"
-								href="404.html">
-								<svg class="shrink-0 size-4 me-3 md:me-2" xmlns="http://www.w3.org/2000/svg" width="24"
-									height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-									stroke-linecap="round" stroke-linejoin="round">
-									<path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
-									<circle cx="12" cy="7" r="4" />
-								</svg>
-								Log in
-							</a>
-						</div>
-						<!-- End Button Group -->
-					</div>
-				</div>
-			</div>
-			<!-- End Collapse -->
-		</nav>
-	</header>
-	<!-- ========== END HEADER ========== -->
+                        <!-- Button Group -->
+                        <div
+                            class="relative flex flex-wrap items-center gap-x-1.5 md:ps-2.5 mt-1 md:mt-0 md:ms-1.5 before:block before:absolute before:top-1/2 before:-start-px before:w-px before:h-4 before:bg-gray-300 before:-translate-y-1/2 dark:before:bg-neutral-700">
+                            <a class="p-2 w-full flex items-center text-sm text-gray-800 hover:text-gray-500 focus:outline-hidden focus:text-gray-500 dark:text-neutral-200 dark:hover:text-neutral-500 dark:focus:text-neutral-500"
+                                href="404.html">
+                                <svg class="shrink-0 size-4 me-3 md:me-2" xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
+                                    <circle cx="12" cy="7" r="4" />
+                                </svg>
+                                Log in
+                            </a>
+                        </div>
+                        <!-- End Button Group -->
+                    </div>
+                </div>
+            </div>
+            <!-- End Collapse -->
+        </nav>
+    </header>
+    <!-- ========== END HEADER ========== -->
 
+    <!-- ========== MAIN CONTENT ========== -->
+    <main id="content">
+        <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8">
+            <div
+                class="py-10 min-h-screen bg-white xl:border-x border-x-gray-200 dark:bg-neutral-800 dark:border-x-gray-700">
+
+                <!-- Main content here -->
+
+                <!-- Hero -->
+                <div class="px-4 sm:px-6 lg:px-8 ">
+                    <div
+                        class="h-120 md:h-[80dvh] flex flex-col bg-[url('/assets/renewables/wind-power-plant.jpg')] bg-cover bg-center bg-no-repeat rounded-2xl">
+                        <div class="mt-auto w-2/3 md:max-w-lg ps-5 pb-5 md:ps-10 md:pb-10">
+                            <h1 class="text-xl md:text-3xl lg:text-5xl text-white">
+                                How Renewables Generates Money
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Hero -->
+
+                <!-- Blog Article -->
+                <div class="max-w-[85rem] px-4 sm:px-6 lg:px-8 mx-auto">
+                    <div class="grid lg:grid-cols-3 gap-y-8 lg:gap-y-0 lg:gap-x-6">
+                        <!-- Content -->
+                        <div class="lg:col-span-2">
+                            <div class="py-8 lg:pe-8">
+                                <div class="space-y-5 lg:space-y-8">
+
+                                    <div class="flex items-center gap-x-5">
+
+                                        <p class="text-xs sm:text-sm text-gray-800 dark:text-neutral-200">April 12,
+                                            2021</p>
+                                    </div>
+
+                                    <p class="text-lg text-gray-800 dark:text-neutral-200">Renewable energy is infinite
+                                        and the “fuel” is free – that’s why it’s such a perfect resource for humanity to
+                                        harness, but some people may struggle to understand how it is possible to make
+                                        money from it.</p>
+
+                                    <p class="text-lg text-gray-800 dark:text-neutral-200">Since mankind first
+                                        discovered coal and oil, the global economy has been dependent on these two
+                                        types of ‘black stuff’ for almost every profit-generating process behind GDP
+                                        growth. As a result, there may be a kind of subconscious assumption that “value”
+                                        and therefore profit is only possible from a resource if it is finite, and if
+                                        you control its supply in a world of rising demand. After the second world war,
+                                        the USA became a huge consumer of oil, to power its fast growing economy,
+                                        leading to its involvement in geopolitics in the Middle East.</p>
+
+                                    <p class="text-lg text-gray-800 dark:text-neutral-200">Demand for energy has
+                                        continued to rise, with the growth in populations around the world, but if our
+                                        supply of it becomes infinite, rather than – as is the case with oil and gas –
+                                        controlled by a relatively small number of extractors, can it really be
+                                        profitable? The answer is a resounding ‘yes’!</p>
+
+                                    <figure>
+                                        <img class="w-full object-cover rounded-xl"
+                                            src="/assets/renewables/infinity.png" alt="Blog Image">
+                                    </figure>
+
+                                    <h3 class="text-2xl font-semibold dark:text-white">Generate Revenue</h3>
+
+                                    <p class="text-lg text-gray-800 dark:text-neutral-200">While investing in renewables
+                                        is a good way to support an industry that is helping the planet (and reducing
+                                        our dependence on fossil fuels) the other, less well-known, appeal is the steady
+                                        and long-term investment returns it can bring.</p>
+
+                                    <p class="text-lg text-gray-800 dark:text-neutral-200">Revenue for renewable energy
+                                        providers comes from the people and the companies paying for the electricity
+                                        that the wind, solar and hydro projects are generating. Electricity generated is
+                                        usually charged at a rate of pence per kWh, which rises and falls a little over
+                                        time but is relatively predictable.</p>
+
+                                    <p class="text-lg text-gray-800 dark:text-neutral-200">In some countries, renewable
+                                        energy installations can also be partially funded through the incentives
+                                        provided by governments, but these incentives are fading away as the costs of
+                                        renewable technologies has gone due to mass adoption.</p>
+
+                                    <figure>
+                                        <img class="w-full object-cover rounded-xl"
+                                            src="/assets/renewables/revenue-growth.jpg" alt="Blog Image">
+                                    </figure>
+
+                                    <h3 class="text-2xl font-semibold dark:text-white">Renewable incentives</h3>
+
+                                    <p class="text-lg text-gray-800 dark:text-neutral-200">Government incentives were
+                                        originally designed to get renewable energy off the ground, in the early absence
+                                        of instant profit for the developers making and installing the technology.
+                                        Later, once this industry has reached scale, the incentives offered are
+                                        gradually reduced until it can stand on its own two feet.</p>
+
+                                    <p class="text-lg text-gray-800 dark:text-neutral-200">In the UK, incentives for
+                                        renewable energy installations (“feed-in tariffs” or FITs are the best known of
+                                        these) are set by the Government, based on how much that industry needs to
+                                        develop and how quickly.</p>
+
+                                    <p class="text-lg text-gray-800 dark:text-neutral-200">While we tend to think of
+                                        renewables as being mainly wind and solar power, there are other emerging
+                                        technologies including hydro, biomass, geothermal energy and tidal (which is
+                                        much newer) that all need to be developed and are therefore ripe for investment.
+                                    </p>
+
+                                    <p class="text-lg text-gray-800 dark:text-neutral-200">These early stage renewable
+                                        technologies receive higher government incentives than those, such as wind and
+                                        solar, that are now well established.</p>
+
+                                    <p class="text-lg text-gray-800 dark:text-neutral-200">This doesn’t mean that
+                                        profits are necessarily lower for people investing in older tech like wind and
+                                        solar as projects receive their initial incentive for many years – up to 25
+                                        years for feed-in tariffs.</p>
+
+                                    <p class="text-lg text-gray-800 dark:text-neutral-200">If you invest in
+                                        sustainability focused portfolios through a smartphone app such as Clim8 Invest
+                                        – which offers ‘clean energy’ and ‘clean technology’ amongst its core investment
+                                        themes – your money can be used to invest in a wide range of technologies. By
+                                        putting your eggs in several baskets like this, it can make your returns more
+                                        reliable and reduce your overall investment risk.</p>
+
+                                    <figure>
+                                        <img class="w-full object-cover rounded-xl"
+                                            src="/assets/renewables/incentive.jpg" alt="Blog Image">
+                                    </figure>
+
+                                    <h3 class="text-2xl font-semibold dark:text-white">A clean industry</h3>
+
+                                    <p class="text-lg text-gray-800 dark:text-neutral-200">Our reliance on fossil fuels
+                                        is unsustainable and harmful to the planet, which is
+                                        why the way we produce and consume energy has to change – and change quickly.
+                                    </p>
+
+                                    <p class="text-lg text-gray-800 dark:text-neutral-200">It’s also interesting to note
+                                        that fossil fuels have had a lot of price volatility
+                                        over the years, adding to market uncertainty and economic instability. This has
+                                        never been more apparent than during the coronavirus crisis when oil prices
+                                        collapsed to their lowest level in 18 years. So, it’s critical that we invest in
+                                        renewables, not only because they don’t pollute and harm the planet, but they
+                                        are
+                                        also more stable and reliable in the long term.</p>
+
+                                    <p class="text-lg text-gray-800 dark:text-neutral-200">The UN’s Sustainable
+                                        Development Goals, created in 2015 as a call to action to
+                                        protect the planet and its people by 2030, have accelerated this global
+                                        transition
+                                        to cleaner energy. The Paris Climate Agreement of 2016 added further impetus and
+                                        focus to get the world moving as one towards a carbon net zero future.</p>
+
+                                    <p class="text-lg text-gray-800 dark:text-neutral-200">The UK is doing a decent job.
+                                        Since 2010, it has more than tripled the amount of
+                                        electricity generated from renewable sources like wind, solar or hydro, from 10
+                                        per
+                                        cent to almost 40 per cent.</p>
+
+                                    <p class="text-lg text-gray-800 dark:text-neutral-200">Last year the power generated
+                                        by renewable energy in the UK (including wind, solar
+                                        and biomass plants) eclipsed fossil fuels for the first time since the country’s
+                                        first public power plant fired up in 1882 – a huge achievement for the industry.
+                                        It’s a trend set to continue, with renewables playing a major role in the
+                                        decarbonisation of our energy systems over the coming decades.</p>
+
+                                    <p class="text-lg text-gray-800 dark:text-neutral-200">As Duncan Grierson, founder
+                                        and CEO of Clim8 Invest says: “The single biggest threat
+                                        to humanity is climate change and the transition to renewable energy is a
+                                        critical
+                                        element in minimising the catastrophic impacts of climate change.”</p>
+
+                                    <figure>
+                                        <img class="w-full object-cover rounded-xl"
+                                            src="/assets/renewables/green-factory.jpg" alt="Blog Image">
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Content -->
+
+                        <!-- Sidebar -->
+                        <div
+                            class="lg:col-span-1 lg:w-full lg:h-full lg:bg-linear-to-r lg:from-gray-50 lg:via-transparent lg:to-transparent dark:from-neutral-800">
+                            <div class="sticky top-0 start-0 py-8 lg:ps-8">
+                                <!-- Avatar Media -->
+                                <div
+                                    class="group flex items-center gap-x-3 border-b border-gray-200 pb-8 mb-8 dark:border-neutral-700">
+                                    <a class="block shrink-0 focus:outline-hidden" href="404.html">
+                                        <img class="size-10 rounded-full" src="https://avatar.iran.liara.run/public/46"
+                                            alt="Avatar">
+                                    </a>
+
+                                    <a class="group grow block focus:outline-hidden" href="404.html">
+                                        <h5
+                                            class="group-hover:text-gray-600 group-focus:text-gray-600 text-sm font-semibold text-gray-800 dark:group-hover:text-neutral-400 dark:group-focus:text-neutral-400 dark:text-neutral-200">
+                                            Hy
+                                        </h5>
+                                        <p class="text-sm text-gray-500 dark:text-neutral-500">
+                                            Stellaris Conqueror
+                                        </p>
+                                    </a>
+
+                                    <div class="grow">
+                                        <div class="flex justify-end">
+                                            <button type="button"
+                                                class="py-1.5 px-2.5 inline-flex items-center gap-x-2 text-xs font-medium rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 focus:outline-hidden focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none">
+                                                <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg"
+                                                    width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round">
+                                                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                                                    <circle cx="9" cy="7" r="4" />
+                                                    <line x1="19" x2="19" y1="8" y2="14" />
+                                                    <line x1="22" x2="16" y1="11" y2="11" />
+                                                </svg>
+                                                Follow
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Avatar Media -->
+
+                                <div class="space-y-6">
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Sidebar -->
+                    </div>
+                </div>
+                <!-- End Blog Article -->
+            </div>
+        </div>
+    </main>
 
     <footer
-		class="border-t border-gray-200 mt-auto w-full max-w-[85rem] py-10 px-4 sm:px-6 lg:px-8 mx-auto dark:bg-neutral-800">
-		<!-- Grid -->
-		<div class="grid grid-cols-1 md:grid-cols-3 items-center gap-5">
-			<div>
-				<a class="flex-none text-xl font-semibold text-black focus:outline-hidden dark:text-white" href="index.html"
-					aria-label="Brand">REimagine</a>
-			</div>
-			<!-- End Col -->
+        class="border-t border-gray-200 mt-auto w-full max-w-[85rem] py-10 px-4 sm:px-6 lg:px-8 mx-auto dark:bg-neutral-800">
+        <!-- Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 items-center gap-5">
+            <div>
+                <a class="flex-none text-xl font-semibold text-black focus:outline-hidden dark:text-white"
+                    href="/index.html" aria-label="Brand">REimagine</a>
+            </div>
+            <!-- End Col -->
 
-			<ul class="text-center">
-				<li
-					class="inline-block relative pe-8 last:pe-0 last-of-type:before:hidden before:absolute before:top-1/2 before:end-3 before:-translate-y-1/2 before:content-['/'] before:text-gray-300 dark:before:text-neutral-600">
-					<a class="inline-flex gap-x-2 text-sm text-gray-500 hover:text-gray-800 focus:outline-hidden focus:text-gray-800 dark:text-neutral-500 dark:hover:text-neutral-200 dark:focus:text-neutral-200"
-						href="404.html">
-						About
-					</a>
-				</li>
-				<li
-					class="inline-block relative pe-8 last:pe-0 last-of-type:before:hidden before:absolute before:top-1/2 before:end-3 before:-translate-y-1/2 before:content-['/'] before:text-gray-300 dark:before:text-neutral-600">
-					<a class="inline-flex gap-x-2 text-sm text-gray-500 hover:text-gray-800 focus:outline-hidden focus:text-gray-800 dark:text-neutral-500 dark:hover:text-neutral-200 dark:focus:text-neutral-200"
-						href="404.html">
-						Services
-					</a>
-				</li>
-				<li
-					class="inline-block relative pe-8 last:pe-0 last-of-type:before:hidden before:absolute before:top-1/2 before:end-3 before:-translate-y-1/2 before:content-['/'] before:text-gray-300 dark:before:text-neutral-600">
-					<a class="inline-flex gap-x-2 text-sm text-gray-500 hover:text-gray-800 focus:outline-hidden focus:text-gray-800 dark:text-neutral-500 dark:hover:text-neutral-200 dark:focus:text-neutral-200"
-						href="404.html">
-						Blog
-					</a>
-				</li>
-			</ul>
-			<!-- End Col -->
+            <ul class="text-center">
+                <li
+                    class="inline-block relative pe-8 last:pe-0 last-of-type:before:hidden before:absolute before:top-1/2 before:end-3 before:-translate-y-1/2 before:content-['/'] before:text-gray-300 dark:before:text-neutral-600">
+                    <a class="inline-flex gap-x-2 text-sm text-gray-500 hover:text-gray-800 focus:outline-hidden focus:text-gray-800 dark:text-neutral-500 dark:hover:text-neutral-200 dark:focus:text-neutral-200"
+                        href="404.html">
+                        About
+                    </a>
+                </li>
+                <li
+                    class="inline-block relative pe-8 last:pe-0 last-of-type:before:hidden before:absolute before:top-1/2 before:end-3 before:-translate-y-1/2 before:content-['/'] before:text-gray-300 dark:before:text-neutral-600">
+                    <a class="inline-flex gap-x-2 text-sm text-gray-500 hover:text-gray-800 focus:outline-hidden focus:text-gray-800 dark:text-neutral-500 dark:hover:text-neutral-200 dark:focus:text-neutral-200"
+                        href="404.html">
+                        Services
+                    </a>
+                </li>
+                <li
+                    class="inline-block relative pe-8 last:pe-0 last-of-type:before:hidden before:absolute before:top-1/2 before:end-3 before:-translate-y-1/2 before:content-['/'] before:text-gray-300 dark:before:text-neutral-600">
+                    <a class="inline-flex gap-x-2 text-sm text-gray-500 hover:text-gray-800 focus:outline-hidden focus:text-gray-800 dark:text-neutral-500 dark:hover:text-neutral-200 dark:focus:text-neutral-200"
+                        href="404.html">
+                        Blog
+                    </a>
+                </li>
+            </ul>
+            <!-- End Col -->
 
-			<!-- Social Brands -->
-			<div class="md:text-end space-x-2">
-				<a class="size-8 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-full border border-transparent text-gray-500 hover:bg-gray-50 focus:outline-hidden focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:text-neutral-400 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
-					href="404.html">
-					<svg class="shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-						fill="currentColor" viewBox="0 0 16 16">
-						<path
-							d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z" />
-					</svg>
-				</a>
-				<a class="size-8 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-full border border-transparent text-gray-500 hover:bg-gray-50 focus:outline-hidden focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:text-neutral-400 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
-					href="404.html">
-					<svg class="shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-						fill="currentColor" viewBox="0 0 16 16">
-						<path
-							d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
-					</svg>
-				</a>
-				<a class="size-8 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-full border border-transparent text-gray-500 hover:bg-gray-50 focus:outline-hidden focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:text-neutral-400 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
-					href="404.html">
-					<svg class="shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-						fill="currentColor" viewBox="0 0 16 16">
-						<path
-							d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
-					</svg>
-				</a>
-				<a class="size-8 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-full border border-transparent text-gray-500 hover:bg-gray-50 focus:outline-hidden focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:text-neutral-400 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
-					href="404.html">
-					<svg class="shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-						fill="currentColor" viewBox="0 0 16 16">
-						<path
-							d="M3.362 10.11c0 .926-.756 1.681-1.681 1.681S0 11.036 0 10.111C0 9.186.756 8.43 1.68 8.43h1.682v1.68zm.846 0c0-.924.756-1.68 1.681-1.68s1.681.756 1.681 1.68v4.21c0 .924-.756 1.68-1.68 1.68a1.685 1.685 0 0 1-1.682-1.68v-4.21zM5.89 3.362c-.926 0-1.682-.756-1.682-1.681S4.964 0 5.89 0s1.68.756 1.68 1.68v1.682H5.89zm0 .846c.924 0 1.68.756 1.68 1.681S6.814 7.57 5.89 7.57H1.68C.757 7.57 0 6.814 0 5.89c0-.926.756-1.682 1.68-1.682h4.21zm6.749 1.682c0-.926.755-1.682 1.68-1.682.925 0 1.681.756 1.681 1.681s-.756 1.681-1.68 1.681h-1.681V5.89zm-.848 0c0 .924-.755 1.68-1.68 1.68A1.685 1.685 0 0 1 8.43 5.89V1.68C8.43.757 9.186 0 10.11 0c.926 0 1.681.756 1.681 1.68v4.21zm-1.681 6.748c.926 0 1.682.756 1.682 1.681S11.036 16 10.11 16s-1.681-.756-1.681-1.68v-1.682h1.68zm0-.847c-.924 0-1.68-.755-1.68-1.68 0-.925.756-1.681 1.68-1.681h4.21c.924 0 1.68.756 1.68 1.68 0 .926-.756 1.681-1.68 1.681h-4.21z" />
-					</svg>
-				</a>
-			</div>
-			<!-- End Social Brands -->
-		</div>
-		<!-- End Grid -->
-	</footer>
+            <!-- Social Brands -->
+            <div class="md:text-end space-x-2">
+                <a class="size-8 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-full border border-transparent text-gray-500 hover:bg-gray-50 focus:outline-hidden focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:text-neutral-400 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
+                    href="404.html">
+                    <svg class="shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        fill="currentColor" viewBox="0 0 16 16">
+                        <path
+                            d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z" />
+                    </svg>
+                </a>
+                <a class="size-8 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-full border border-transparent text-gray-500 hover:bg-gray-50 focus:outline-hidden focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:text-neutral-400 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
+                    href="404.html">
+                    <svg class="shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        fill="currentColor" viewBox="0 0 16 16">
+                        <path
+                            d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                    </svg>
+                </a>
+                <a class="size-8 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-full border border-transparent text-gray-500 hover:bg-gray-50 focus:outline-hidden focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:text-neutral-400 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
+                    href="404.html">
+                    <svg class="shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        fill="currentColor" viewBox="0 0 16 16">
+                        <path
+                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                    </svg>
+                </a>
+                <a class="size-8 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-full border border-transparent text-gray-500 hover:bg-gray-50 focus:outline-hidden focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:text-neutral-400 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
+                    href="404.html">
+                    <svg class="shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        fill="currentColor" viewBox="0 0 16 16">
+                        <path
+                            d="M3.362 10.11c0 .926-.756 1.681-1.681 1.681S0 11.036 0 10.111C0 9.186.756 8.43 1.68 8.43h1.682v1.68zm.846 0c0-.924.756-1.68 1.681-1.68s1.681.756 1.681 1.68v4.21c0 .924-.756 1.68-1.68 1.68a1.685 1.685 0 0 1-1.682-1.68v-4.21zM5.89 3.362c-.926 0-1.682-.756-1.682-1.681S4.964 0 5.89 0s1.68.756 1.68 1.68v1.682H5.89zm0 .846c.924 0 1.68.756 1.68 1.681S6.814 7.57 5.89 7.57H1.68C.757 7.57 0 6.814 0 5.89c0-.926.756-1.682 1.68-1.682h4.21zm6.749 1.682c0-.926.755-1.682 1.68-1.682.925 0 1.681.756 1.681 1.681s-.756 1.681-1.68 1.681h-1.681V5.89zm-.848 0c0 .924-.755 1.68-1.68 1.68A1.685 1.685 0 0 1 8.43 5.89V1.68C8.43.757 9.186 0 10.11 0c.926 0 1.681.756 1.681 1.68v4.21zm-1.681 6.748c.926 0 1.682.756 1.682 1.681S11.036 16 10.11 16s-1.681-.756-1.681-1.68v-1.682h1.68zm0-.847c-.924 0-1.68-.755-1.68-1.68 0-.925.756-1.681 1.68-1.681h4.21c.924 0 1.68.756 1.68 1.68 0 .926-.756 1.681-1.68 1.681h-4.21z" />
+                    </svg>
+                </a>
+            </div>
+            <!-- End Social Brands -->
+        </div>
+        <!-- End Grid -->
+    </footer>
 </body>
 
 </html>
