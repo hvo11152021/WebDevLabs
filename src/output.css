@@ -711,6 +711,9 @@
   .bg-\[url\(\'\/assets\/renewables\/renewable-energy-sources\.jpg\'\)\] {
     background-image: url('/assets/renewables/renewable-energy-sources.jpg');
   }
+  .bg-\[url\(\'\/assets\/renewables\/wind-power-plant\.jpg\'\)\] {
+    background-image: url('/assets/renewables/wind-power-plant.jpg');
+  }
   .bg-\[url\(\'\/assets\/renewables\/windmill-solar-clearsky\.jpeg\'\)\] {
     background-image: url('/assets/renewables/windmill-solar-clearsky.jpeg');
   }
